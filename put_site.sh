@@ -1,0 +1,1 @@
+rsync ./ -avz --exclude=".*" --exclude=".sh" -e ssh jyoshimi@jeffyoshimi.net:public_html

@@ -1,0 +1,391 @@
+/*
+ *    Style sheet for Jeff Yoshimi website
+ *   Based originally on www.prowebdesign.ro, and adapted with help from Lam Nguyen
+ *
+ *    - To get new versions of fonts they must be downloaded
+ */
+
+
+/* Main elements; typography */
+
+body {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: 1.5em;
+    color: #7D7D7D;
+}
+@font-face {
+    font-family: 'Champagne';
+    src: url('font/champagne_and_limousines.eot');
+    src: url('font/champagne_and_limousines.eot?#iefix') format('embedded-opentype'), url('font/champagne_and_limousines.svg#Champagne & Limousines') format('svg'), url('font/champagne_and_limousines.woff') format('woff'), url('font/champagne_and_limousines.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('font/Oswald-Bold.otf') format('truetype');
+    src: url('font/Oswald-Light.otf') format('truetype');
+    src: url('font/Oswald-Regular.otf') format('truetype');
+    src: url('font/Oswald-Stencil.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Regular.ttf') format('truetype');
+    src: url('font/Roboto-Light.ttf') format('truetype');
+    src: url('font/Roboto-Thin.ttf') format('truetype');
+}
+h1 {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 400%;
+    color: #317BAC;
+    /*width:10em;*/
+    text-align: center;
+    /*padding: 10px;*/
+   /* line-height: 110%;*/
+}
+menutext {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    /*font-size: 200%;*/
+    color: #317BAC;
+    /*padding: 50px;*/
+    /*line-height: 150%;*/
+}
+.menu_grid {
+    width: 21.7%;
+    margin-left: 1.7%;
+    margin-right: 1.7%;
+    float: left;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+hr {
+    clear:both;
+    /* To solve problem of hr's looking funny on some systems.  See Problem: http://www.quirksmode.org/css/clearing.html
+        Solution src:  http://en.blog.improveit.com.br/articles/2008/09/27/margins-on-the-hr-tag-a-case-solved */}
+
+.logo {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.jy_header {
+    font-weight: normal;
+    font-size: 2em;
+}
+.jy_sub_header {
+    font-family: 'Oswald';
+    font-weight: lighter;
+}
+.jy_header, jy_sub_header {
+    font-family: 'Oswald';
+    color: #317BAC;
+    line-height: 110%;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 2em;
+    font-weight: normal;
+    font-family: 'Roboto';
+    line-height: 1.5em;
+    margin: .45em 0;
+    padding: 0;
+}
+
+/* links */
+a, a:visited, a:active, a:hover {
+    color: #317BAC;
+    text-decoration: underline;
+    font-weight:bold;
+}
+/* class for modifying anchors in menutext */
+.nounderline, .nounderline:hover, .nounderline:active, .nounderline:visited {
+    text-decoration: none;
+}
+
+/*a:hover{ text-decoration:none;}*/
+
+/* Box sizing. Awesome thing. Read about it here: http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* structure */
+
+header {
+    padding: 15px 0;
+}
+
+aside {
+    margin: 40px 0;
+}
+p {
+    margin: 0 0 1.5em;
+    /** Body text is set in body, not here. */
+}
+
+#content {
+    margin: 40px 0;
+}
+
+.wrapper {
+    width: 92%;
+    margin: 0 auto;
+}
+
+
+/* RESPONSIVE IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*colors and backgrounds*/
+
+body {
+    background: #FFFFFF;
+    /* Blue. color:#317BAC; */
+}
+h1, h2, h3, h4, h5, h6 {
+    /*color:#333; */
+}
+footer {
+    background: #333;
+    color: #ccc;
+}
+footer h1, footer h2, footer h3, footer h4 {
+    color: #CCC;
+    margin-bottom: 10px;
+}
+footer ul {
+    margin: 0 0 0 8%;
+}
+
+h1.mainTitle {
+    margin-bottom: .1em;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
+.icons > a > img {
+    width: 27px;
+}
+.icons > a:not(:last-child) {
+    margin-right: 1em;
+}
+
+
+/*
+ * Small devices.  
+*/
+@media only screen and (min-width: 10px) and (max-width: 750px) {
+    .logo {
+        margin: 0 auto;
+        width: 80%;
+    }
+    h1 {
+        line-height: 110%;
+    }
+    menutext {
+        font-size: 200%;
+        padding-left: 0;
+    }
+    .menu_grid {
+        margin: 0 auto;
+        width: 90%;
+        padding: 10px;
+    }
+    .home_grid {
+        max-width: 80%;    
+        margin-right: auto;
+        margin-left: auto;    
+    }
+
+}
+
+/*
+ * Medium devices (tablets, etc.) and larger
+ */
+@media only screen and (min-width: 750px) {
+    .logo {
+        margin: 0 auto;
+        width: 50%;
+    }
+    #banner {
+        text-align: left;
+    }
+    h1 {
+        font-size: 450%;
+        line-height: 110%;
+        /*padding: 1px;*/
+    }   
+    a, a:visited, a:active, a:hover {
+        font-weight:normal;
+    }
+    menutext {
+        padding-left: 0;
+        font-size: 180%;
+    }
+    .menu_grid {
+        width: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
+        float: left;
+        padding-top: 8px;
+        padding-bottom: 8px;      
+    }
+    .home_grid {
+        width: 30%;
+        margin-left: 1.6666666666667%;
+        margin-right: 1.6666666666667%;
+        float: left;
+        display: block;
+    }
+
+
+    .wrapper {
+        width: 92%;
+        margin: .75em auto;
+    }
+    /*img { max-width: 60%; }*/
+    .menu-toggle {
+        /*make menu float right, instead of sitting under the logo*/
+        margin-top: 10px;
+        /*this depends on the height of the logo*/
+        float: right;
+    }
+}
+/*
+ * Tablets and Smaller laptops
+ */
+@media only screen and (min-width: 920px) {
+    .logo {
+        margin: 0 auto;
+        width: 30%;
+    }
+    .wrapper {
+        width: 90%;
+        margin: .75em auto;
+    }
+    h1 {
+        font-size: 400%;
+        /*padding: 1px;*/
+    }   
+    menutext {
+        font-size: 225%;
+    }
+    .menu_grid {
+        width: 21%;
+        margin-left: 1.9%;
+        margin-right: 1.9%;
+        float: left;
+        padding-top: 8px;
+        padding-bottom: 8px;    
+    }
+    #banner {
+        min-wid text-align: left;
+        margin-bottom: 0px;
+    }
+    header {
+        padding: 0;
+    }
+    #content {
+        float: left;
+        width: 65%;
+    }
+    #content.wide-content {
+        float: none;        
+        width: 100%;
+    }
+    aside {
+        float: right;
+        width: 30%;
+    }
+    .home_grid {
+        width: 30%;
+        margin-left: 1.6666666666667%;
+        margin-right: 1.6666666666667%;
+        float: left;
+        display: block;
+    }
+
+}
+
+/*
+ * Desktops
+ */
+@media only screen and (min-width: 1030px) {}
+
+/*
+ * Larger monitors and possibly full screen viewers.
+ */
+@media only screen and (min-width: 1240px) {}
+
+/*
+ * Retina and high resolutino devices
+ * This applies to the retina iPhone (4s) and iPad (2,3) along with other displays with a 2x resolution.
+ */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {}
+
+/*
+iPHONE 5 MEDIA QUERY
+iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/*
+PRINT STYLESHEET
+*/
+@media print {
+    * {
+        background:transparent !important;
+        color:black !important;
+        text-shadow:none !important;
+        filter:none !important;
+        -ms-filter:none !important;
+    }
+    /* Black prints faster: h5bp.com/s */
+    a, a:visited {
+        text-decoration:underline;
+    }
+    a[href]:after {
+        content:" (" attr(href)")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title)")";
+    }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+        content: "";
+    }
+    /* Don't show links for images, or javascript/internal links */
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    /* h5bp.com/t */
+    tr, img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    @page {
+        margin: 0.5cm;
+    }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}
