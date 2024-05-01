@@ -1,3 +1,3 @@
-# Readme for Jeff Yoshimi's website repo
+# Jeff's website
 
 Commits are automatically deployed using actions
