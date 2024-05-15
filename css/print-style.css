@@ -1,0 +1,114 @@
+/* print-style.css */
+@media print {
+    .logo,
+    .menu_grid,
+    #content,
+    hr,
+    #main .wrapper > br {
+        display: none;
+    }
+
+    h1 {
+        font-size: 23pt; /* Adjust font size as needed */
+        font-weight: normal;
+        color: silver;
+        margin: 45px 0px 5px 0px;
+    }
+
+    .contactInfoContainer i {
+        color: silver;
+    }
+
+    .jy_sub_header {
+        margin-left: 0px;
+        font-weight: bold;
+    }
+
+    #serve {
+        margin-left: 25px;
+        text-indent: -25px;
+        padding-bottom: 5px;
+    }
+
+    #subblock {
+        margin-left: 25px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .degree, .title {
+        font-weight: bold;
+    }
+
+    .contactLabel {
+        width: 90px;
+        display: inline-block;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 50px;
+        font-size: 9pt;
+        text-align: justify;
+    }
+
+    .fullOn {
+        width: 100%;
+    }
+
+    .jy_header {
+        font-size: 13pt;
+        font-weight: normal;
+        margin: 15px 0px 5px 0px;
+    }
+
+    .studentNote {
+        font-size: 9pt;
+        margin: 15px 0px 5px 0px;
+    }
+
+    .cvTitle {
+        margin: 45px 0px 5px 0px;
+        color: silver;
+    }
+
+    .affiliation {
+        padding: 5px 0px 25px 0px;
+        padding-bottom: 15px;
+        border-bottom: solid 1px silver;
+    }
+
+    .name {
+        margin: 5px 0px 5px 0px;
+        font-size: 23pt;
+        font-weight: normal;
+        width: 100%;
+    }
+
+    .pub {
+        margin-left: 50px;
+        text-indent: -25px;
+        padding-bottom: 5px;
+    }
+
+    .contactInfoContainer {
+        float: right;
+        padding: 15px;
+        white-space: nowrap;
+        font-size: smaller;
+    }
+
+    .contactInfoContainer a {
+        color: black;
+    }
+
+    .basicInfo {
+        margin-left: 25px;
+        text-align: justify;
+    }
+}
