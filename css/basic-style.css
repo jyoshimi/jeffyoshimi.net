@@ -34,15 +34,17 @@ body {
     src: url('font/Roboto-Light.ttf') format('truetype');
     src: url('font/Roboto-Thin.ttf') format('truetype');
 }
+
+#main {
+    max-width: 1280px;
+}
+
 h1 {
     font-family: 'Roboto';
     font-weight: lighter;
     font-size: 400%;
     color: #317BAC;
-    /*width:10em;*/
     text-align: center;
-    /*padding: 10px;*/
-   /* line-height: 110%;*/
 }
 menutext {
     font-family: 'Roboto';
@@ -73,8 +75,11 @@ hr {
 }
 
 .jy_header {
+    text-align: left;
     font-weight: normal;
     font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0.25em;
 }
 .jy_sub_header {
     font-family: 'Oswald';
@@ -180,6 +185,43 @@ h1.mainTitle {
     margin-right: 1em;
 }
 
+.research_topic {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0.5em;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+.research_topic p {
+    margin: 0;
+}
+
+.research_description {
+    flex: 4 1 0;
+}
+
+.research_images {
+    flex: 2 1 0;
+}
+
+.research_images img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.flex-grow-3 {
+    flex-grow: 3;
+}
 
 /*
  * Small devices.  
@@ -289,8 +331,9 @@ h1.mainTitle {
         padding-bottom: 8px;    
     }
     #banner {
-        min-wid text-align: left;
-        margin-bottom: 0px;
+        min-width: unset;
+        text-align: left;
+        margin-bottom: 0;
     }
     header {
         padding: 0;
@@ -314,7 +357,15 @@ h1.mainTitle {
         float: left;
         display: block;
     }
-
+    .research_topic {
+        flex-direction: row;
+    }
+    .research_topic:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .research_topic:nth-child(even) .jy_header {
+        text-align: right;
+    }
 }
 
 /*
