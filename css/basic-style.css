@@ -69,11 +69,6 @@ hr {
     /* To solve problem of hr's looking funny on some systems.  See Problem: http://www.quirksmode.org/css/clearing.html
         Solution src:  http://en.blog.improveit.com.br/articles/2008/09/27/margins-on-the-hr-tag-a-case-solved */}
 
-.logo {
-    margin: 0 auto;
-    width: 30%;
-}
-
 .jy_header {
     text-align: left;
     font-weight: normal;
@@ -223,14 +218,63 @@ h1.mainTitle {
     flex-grow: 3;
 }
 
+.logo {
+    width: 100%;
+}
+
+#simbrain_container {
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+
+#simbrain_web {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#simbrain_container:hover #simbrain_controls {
+    display: flex;
+}
+
+#simbrain_controls {
+    position: absolute;
+    bottom: 0;
+    right: -1em;
+    display: none;
+    align-items: center;
+    column-gap: 0.25em;
+}
+
+.simbrain_button {
+    background: rgb(239, 239, 239);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    color: black;
+    font-size: 0.75rem;
+    padding: 0.25em 0.5em;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.simbrain_button:hover {
+    background: rgb(255, 255, 255);
+}
+
+.simbrain_button:active {
+    background: rgb(200, 200, 200);
+}
+
+.simbrain_button:visited {
+    color: black;
+}
+
 /*
  * Small devices.  
 */
 @media only screen and (min-width: 10px) and (max-width: 750px) {
-    .logo {
-        margin: 0 auto;
-        width: 80%;
-    }
     h1 {
         line-height: 110%;
     }
@@ -255,10 +299,6 @@ h1.mainTitle {
  * Medium devices (tablets, etc.) and larger
  */
 @media only screen and (min-width: 750px) {
-    .logo {
-        margin: 0 auto;
-        width: 50%;
-    }
     #banner {
         text-align: left;
     }
@@ -307,10 +347,6 @@ h1.mainTitle {
  * Tablets and Smaller laptops
  */
 @media only screen and (min-width: 920px) {
-    .logo {
-        margin: 0 auto;
-        width: 30%;
-    }
     .wrapper {
         width: 90%;
         margin: .75em auto;

@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/basic-style.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/js/all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/fontawesome.min.css" rel="stylesheet">
 
     </style>
 </head>
@@ -21,7 +23,14 @@
     <!-- main content area -->
     <div id="main" class="wrapper">
         <section id="content" class="wide-content">
-            <div id="simbrain_web" class="logo">
+            <div class="logo">
+                <div id="simbrain_container">
+                    <div id="simbrain_web"></div>
+                    <div id="simbrain_controls">
+                        <button id="simbrain_play" class="simbrain_button" data-state="play"><i id="simbrain_play_icon" class="fa-solid fa-pause"></i></button>
+                        <a href="https://leoyulinli.github.io/simbrain_web" id="simbrain_help" class="simbrain_button" target="_blank"><i class="fa-solid fa-question"></i></a>
+                    </div>
+                </div>
             </div>
             <hr>
             <div class="menu_grid">
@@ -58,7 +67,9 @@
         </section>
     </div>
         <!-- TODO: Add back attribution somehow when done-->
+    <script src="js/simbrain_logo_config.js"></script>
     <script src="js/simbrain_web.js"></script>
+    <script src="js/simbrain_logo_actions.js"></script>
 </body>
 
 </html>
