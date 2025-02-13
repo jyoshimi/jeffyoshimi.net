@@ -219,10 +219,19 @@ h1.mainTitle {
 }
 
 .logo {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
+
+.logo > a {
+    display: contents;
+}
+
+.logo img {
+    width: 30%;
+}
+
 
 #simbrain_container {
     position: relative;
