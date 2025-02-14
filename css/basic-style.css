@@ -282,6 +282,23 @@ h1.mainTitle {
     color: black;
 }
 
+kbd {
+  display: inline-block;
+  padding: 1px 4px;
+  font-size: 0.9em;
+  font-family: monospace;
+  color: #fff;
+  background-color: #317BAC;
+  border: 0px solid #317BAC;
+  border-radius: 4px;
+}
+
+.ul_nodots {
+  list-style-type: none;
+  padding: 0;  /* Removes default padding */
+  margin: 0;   /* Removes default margin */
+}
+
 /*
  * Small devices.  
 */
@@ -335,8 +352,8 @@ h1.mainTitle {
     }
     .home_grid {
         width: 30%;
-        margin-left: 1.6666666666667%;
-        margin-right: 1.6666666666667%;
+        margin-left: 1.7%;
+        margin-right: 1.7%;
         float: left;
         display: block;
     }
@@ -399,8 +416,8 @@ h1.mainTitle {
     }
     .home_grid {
         width: 30%;
-        margin-left: 1.6666666666667%;
-        margin-right: 1.6666666666667%;
+        margin-left: 1.7%;
+        margin-right: 1.7%;
         float: left;
         display: block;
     }
