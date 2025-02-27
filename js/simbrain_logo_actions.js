@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         sampleNeuron().value = (Math.random() - 0.5) * 2.0;
         sampleNeuron().value = (Math.random() - 0.5) * 2.0;
         sampleNeuron().value = (Math.random() - 0.5) * 2.0;
-        window.networkPanel.network.update();
+        window.network.update();
     }
 
 
