@@ -12,9 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
         window.network.update();
     }
 
-
-
-
     const playButton = document.querySelector("#simbrain_play");
 
     let frameCount = 0;
@@ -22,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function animate() {
         frameCount++;
-        if (frameCount % 20 === 0) {
-            randomActivation();
+        if (frameCount % 5 === 0) {
+            window.network.update();
         }
         animationFrameId = requestAnimationFrame(animate);
     }
