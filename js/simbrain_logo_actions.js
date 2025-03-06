@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function animate() {
         frameCount++;
-        if (frameCount % 5 === 0) {
+        if (frameCount % 1 === 0) {
             window.network.update();
         }
         animationFrameId = requestAnimationFrame(animate);
