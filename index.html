@@ -25,7 +25,15 @@
 
     <!-- main content area -->
     <div id="main" class="wrapper">
-        <h1 class = "mainTitle">Jeff Yoshimi</h1>
+        <div class="logo">
+            <div id="simbrain_container">
+                <div id="simbrain_web"></div>
+                <div id="simbrain_controls">
+                    <button id="simbrain_play" class="simbrain_button" data-state="play"><i id="simbrain_play_icon" class="fa-solid fa-pause"></i></button>
+                    <a href="simbrain_web_info.html" id="simbrain_help" class="simbrain_button" target="_blank"><i class="fa-solid fa-question"></i></a>
+                </div>
+            </div>
+        </div>
         <div class="icons">
             <a href="https://bsky.app/profile/jyoshimi.bsky.social"><img src="images/bluesky.png"></a>
             <a href="https://twitter.com/JeffYoshimi"><img src="images/twitter.png"></a>
@@ -52,7 +60,9 @@
             </div>
 
         </section>
-        <!-- #end content area -->
+    <script src="js/simbrain_logo_config.js"></script>
+    <script src="js/simbrain_web.js"></script>
+    <script src="js/simbrain_logo_actions.js"></script>
 
 
 </body>

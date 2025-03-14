@@ -19,11 +19,14 @@
     <div id="main" class="wrapper">
         <section id="content" class="wide-content">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/JYLogo.png">
-                </a>
+                <div id="simbrain_container">
+                    <div id="simbrain_web"></div>
+                    <div id="simbrain_controls">
+                        <button id="simbrain_play" class="simbrain_button" data-state="play"><i id="simbrain_play_icon" class="fa-solid fa-pause"></i></button>
+                        <a href="simbrain_web_info.html" id="simbrain_help" class="simbrain_button" target="_blank"><i class="fa-solid fa-question"></i></a>
+                    </div>
+                </div>
             </div>
-            <h1>Jeff Yoshimi</h1>
             <hr>
             <div class="menu_grid">
                 <a href="index.html" class="nounderline">
@@ -115,6 +118,11 @@
                 </div>
             </div>
     </section>
+
+    <script src="js/simbrain_logo_config.js"></script>
+    <script src="js/simbrain_web.js"></script>
+    <script src="js/simbrain_logo_actions.js"></script>
+
 
 </body>
 
