@@ -1,5 +1,13 @@
 /* print-style.css */
 @media print {
+    #simbrain_container {
+        display: none; /* Hide in print view */
+    }
+    
+    #print_media_header {
+        display: block; /* Show in print view */
+    }
+    
     .logo,
     .menu_grid,
     #content,

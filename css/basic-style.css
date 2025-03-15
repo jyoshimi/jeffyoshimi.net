@@ -239,6 +239,10 @@ h1.mainTitle {
     margin: auto;
 }
 
+#print_media_header {
+    display: none;
+}
+
 #simbrain_web {
     width: 400px;
     height: 300px;
