@@ -21,13 +21,7 @@ body {
     src: url('font/champagne_and_limousines.eot');
     src: url('font/champagne_and_limousines.eot?#iefix') format('embedded-opentype'), url('font/champagne_and_limousines.svg#Champagne & Limousines') format('svg'), url('font/champagne_and_limousines.woff') format('woff'), url('font/champagne_and_limousines.ttf') format('truetype');
 }
-@font-face {
-    font-family: 'Oswald';
-    src: url('font/Oswald-Bold.otf') format('truetype');
-    src: url('font/Oswald-Light.otf') format('truetype');
-    src: url('font/Oswald-Regular.otf') format('truetype');
-    src: url('font/Oswald-Stencil.otf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @font-face {
     font-family: 'Roboto';
     src: url('font/Roboto-Regular.ttf') format('truetype');
