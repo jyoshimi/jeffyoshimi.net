@@ -76,6 +76,26 @@ hr {
     line-height: 110%;
 }
 
+.cv-actions {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.cv-actions a {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    color: #6d7d85;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.cv-actions a:hover {
+    color: #317BAC;
+    text-decoration: underline;
+}
+
 h2, h3, h4, h5, h6 {
     font-size: 2em;
     font-weight: normal;
