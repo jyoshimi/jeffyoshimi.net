@@ -437,6 +437,16 @@ kbd {
   margin: 0;   /* Removes default margin */
 }
 
+.phone_notice {
+    display: none;
+}
+
+@media only screen and (max-width: 750px), (hover: none) and (pointer: coarse) {
+    .phone_notice {
+        display: block;
+    }
+}
+
 /*
  * Small devices.  
 */
