@@ -182,12 +182,85 @@ h1.mainTitle {
 .icons {
     display: flex;
     justify-content: center;
+    align-items: center;
+    overflow: visible;
 }
-.icons > a > img {
+.icons > .social_link > img {
     width: 27px;
 }
-.icons > a:not(:last-child) {
+.icons > .social_link:not(:last-child) {
     margin-right: 1em;
+}
+
+.social_link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    color: #317BAC;
+    text-decoration: none;
+}
+
+.social_link:hover,
+.social_link:focus,
+.social_link:active,
+.social_link:visited {
+    color: #317BAC;
+    text-decoration: none;
+}
+
+.social_link > svg {
+    width: 27px;
+    height: 27px;
+}
+
+.social_tooltip {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 0.75rem);
+    z-index: 5;
+    width: 16rem;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid rgba(49, 123, 172, 0.22);
+    border-radius: 0.4rem;
+    background: rgba(255, 255, 255, 0.98);
+    color: #3a3a3a;
+    font-size: 0.78rem;
+    font-weight: normal;
+    line-height: 1.35;
+    text-align: left;
+    box-shadow: 0 0.45rem 1.2rem rgba(0, 0, 0, 0.14);
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 0.25rem);
+    transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.social_tooltip::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    border: 0.45rem solid transparent;
+    border-top-color: rgba(255, 255, 255, 0.98);
+    transform: translateX(-50%);
+}
+
+.social_tooltip strong {
+    display: block;
+    margin-bottom: 0.15rem;
+    color: #317BAC;
+    font-weight: normal;
+}
+
+.social_link:hover .social_tooltip,
+.social_link:focus .social_tooltip,
+.social_link:focus-visible .social_tooltip,
+.social_link.social_tooltip_open .social_tooltip {
+    opacity: 1;
+    transform: translate(-50%, 0);
 }
 
 .research_topic {
@@ -480,6 +553,22 @@ kbd {
         right: -2.95rem;
         width: min(18rem, 88vw);
         transform-origin: 90% 100%;
+    }
+    .social_tooltip {
+        position: fixed;
+        left: 50%;
+        bottom: 1rem;
+        width: min(22rem, calc(100vw - 2rem));
+        transform: translate(-50%, 0.25rem);
+    }
+    .social_tooltip::after {
+        display: none;
+    }
+    .social_link:hover .social_tooltip,
+    .social_link:focus .social_tooltip,
+    .social_link:focus-visible .social_tooltip,
+    .social_link.social_tooltip_open .social_tooltip {
+        transform: translate(-50%, 0);
     }
 
 }
