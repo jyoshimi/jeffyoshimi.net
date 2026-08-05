@@ -69,8 +69,9 @@ hr {
 .jy_sub_header {
     display: block;
     font-family: 'Oswald';
+    font-size: 1.2rem;
     font-weight: lighter;
-    margin: 1rem 0 0.35rem;
+    margin: 1.9rem 0 0.4rem;
 }
 .jy_header, jy_sub_header {
     font-family: 'Oswald';
@@ -100,7 +101,8 @@ hr {
 
 /* Add space between CV entries without changing the line spacing within an entry. */
 .cv-entry {
-    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.1rem;
 }
 
 /* Legacy line breaks followed each list; retain only one before the next category. */
