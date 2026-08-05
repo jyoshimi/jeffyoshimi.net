@@ -60,15 +60,17 @@ hr {
         Solution src:  http://en.blog.improveit.com.br/articles/2008/09/27/margins-on-the-hr-tag-a-case-solved */}
 
 .jy_header {
+    display: block;
     text-align: left;
     font-weight: normal;
     font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin: 1.5rem 0 0.5rem;
 }
 .jy_sub_header {
+    display: block;
     font-family: 'Oswald';
     font-weight: lighter;
+    margin: 1rem 0 0.35rem;
 }
 .jy_header, jy_sub_header {
     font-family: 'Oswald';
@@ -94,6 +96,43 @@ hr {
 .cv-actions a:hover {
     color: #317BAC;
     text-decoration: underline;
+}
+
+/* Add space between CV entries without changing the line spacing within an entry. */
+.cv-entry {
+    margin-bottom: 0.5rem;
+}
+
+/* Legacy line breaks followed each list; retain only one before the next category. */
+.cv-entry + br,
+.cv-entry + br + br {
+    display: none;
+}
+
+/* Headings control their own spacing; ignore the legacy line breaks around them. */
+.jy_header + br,
+.jy_header + br + br,
+.jy_header + br + br + br,
+.jy_sub_header + br,
+.jy_sub_header + br + br,
+.jy_sub_header + br + br + br,
+br:has(+ .jy_header),
+br:has(+ br + .jy_header),
+br:has(+ br + br + .jy_header),
+br:has(+ .jy_sub_header),
+br:has(+ br + .jy_sub_header),
+br:has(+ br + br + .jy_sub_header) {
+    display: none;
+}
+
+/* Let the following heading's top margin set the gap after the final entry. */
+.cv-entry:has(+ br + .jy_header),
+.cv-entry:has(+ br + br + .jy_header),
+.cv-entry:has(+ br + br + br + .jy_header),
+.cv-entry:has(+ br + .jy_sub_header),
+.cv-entry:has(+ br + br + .jy_sub_header),
+.cv-entry:has(+ br + br + br + .jy_sub_header) {
+    margin-bottom: 0;
 }
 
 h2, h3, h4, h5, h6 {
