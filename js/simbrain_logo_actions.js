@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (simbrainContainer && shouldShowCallout()) {
         const callout = document.createElement("div");
         callout.classList.add("simbrain_callout");
-        callout.innerHTML = '<a class="simbrain_callout_body" href="simbrain_web_info.html" target="_blank">This is a real neural network you can interact with. Click here for more info.</a>';
+        callout.innerHTML = '<a class="simbrain_callout_body" href="simbrain_web_info.html" target="_blank">This is a real simulation of a neural network you can interact with. Click here for more info.</a>';
         simbrainContainer.classList.add("simbrain_callout_active");
         simbrainContainer.appendChild(callout);
 
